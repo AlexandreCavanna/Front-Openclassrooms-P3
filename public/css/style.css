@@ -410,7 +410,7 @@ body {
   font-family: "Roboto";
   src: url("../../../public/fonts/roboto/roboto-regular-webfont.woff2") format("woff2"), url("../../../public/fonts/roboto/roboto-regular-webfont.woff") format("woff");
 }
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, button {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 1rem;
@@ -428,7 +428,7 @@ h3 {
   font-size: 1.7rem;
 }
 
-h4 {
+h4, button {
   font-size: 1.4rem;
 }
 
@@ -444,7 +444,7 @@ p, i {
   font-size: 1.6rem;
 }
 
-.search-restaurant__subtitle, .card_subtitle {
+.search-restaurant__subtitle, .card_subtitle, button {
   font-weight: 100;
 }
 
@@ -476,6 +476,9 @@ p, i {
 }
 .search-restaurant__heading, .search-restaurant__subtitle {
   text-align: center;
+}
+.search-restaurant__subtitle {
+  margin-top: 0;
 }
 .search-restaurant__btn {
   border: 0;
