@@ -21,15 +21,65 @@
     align-items: center;
     background-color: $background-color-secondary;
 
-    &__heading, &__subtitle {
-        text-align: center;
-    }
-
     &__subtitle {
         margin-top: 0
     }
 
     &__btn {
         @include btn-primary;
+    }
+}
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__heading {
+        width: 100%;
+    }
+
+    &__step-card {
+        display: flex;
+        cursor: pointer;
+        border: 0;
+        border-radius: 15px;
+        box-shadow: -1px 6px 8px -2px hsl(180, 1%, 70%);
+        background-color: $background-color-secondary;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    &__number {
+        position: absolute;
+        left: 4.3%;
+        background-color: $color-primary;
+        color: $color-white;
+        border: 0;
+        border-radius: 50px;
+        width: 20px;
+        text-align: center;
+    }
+
+    &__icon {
+        color: #7d7d7d;
+        text-align: center;
+        width: 30px;
+    }
+
+    &__text {
+        width: 180px;
+    }
+
+    &__step-card:last-of-type &__icon {
+        color: $color-primary;
+    }
+
+    &__step-card:last-child {
+        background-color: #f5edff;
     }
 }
