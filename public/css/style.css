@@ -434,4 +434,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #EAEAEA;
 }
 
+.search-restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+.search-restaurant__heading, .search-restaurant__subtitle {
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

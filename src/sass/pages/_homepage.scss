@@ -5,3 +5,15 @@
     column-gap: 1rem;
     background-color: $color-white-dark;
 }
+
+.search-restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-color-secondary;
+
+    &__heading, &__subtitle {
+        text-align: center;
+    }
+}
